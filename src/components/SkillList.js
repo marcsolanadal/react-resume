@@ -21,7 +21,7 @@ const SkillContainer = styled.div`
 `;
 
 function Skill(props) {
-  let circles = [];
+  const circles = [];
   if (props.level) {
     for (let i = 1; i <= 5; i++) {
       if (i <= props.level) {
