@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import CircleList from './CircleList';
 import SkillList from './SkillList';
 import { Section, SubTitle } from './Elements';
+import { splitTextByParagraph } from '../utils/formatting';
 
 const TitleContainer = styled.div`
   display: flex;
@@ -52,7 +53,6 @@ const JobItem = styled.div`
   }
 
   div:last-child {
-    padding-top: 16px;
     text-align: justify;
   }
 `;
@@ -63,17 +63,17 @@ export function EmploymentHistory({ employmentHistory }) {
       <SubTitle>EMPLOYMENT HISTORY</SubTitle>
       <CircleList
         list={employmentHistory}
-        maxWidth={600}
+        maxWidth={700}
         renderItem={job => (
           <JobItem>
             <div>{job.title}</div>
             <div>
-              <i>{job.company}</i>
+              <i>{job.company} - {job.location}</i>
             </div>
             <div>
-              <i>{job.location}</i>
+              <i>{job.period.start} - {job.period.end} ({job.period.time})</i>
             </div>
-            <div>{job.description}</div>
+            <div>{splitTextByParagraph(job.description)}</div>
           </JobItem>
         )}
       />

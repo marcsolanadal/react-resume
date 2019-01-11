@@ -8,6 +8,8 @@ const ListItem = styled.div`
 `;
 
 const ListContainer = styled.div`
+  display: flex;
+  flex-direction: column;
   list-style: none;
   min-width: 280px;
   max-width: ${props => props.maxWidth}px;

@@ -7,31 +7,46 @@ export default {
   email: 'marcsolanadal@gmail.com',
   employmentHistory: [
     {
+      title: 'Javascript/React Expert',
+      company: 'GFT Technologies',
+      location: 'Sant Cugat, Spain',
+      period: {
+        start: 'March 2017',
+        end: 'Present',
+        time: '2 years'
+      },
+      description: `
+        I got assigned to the NTA cluster, a group working in multiple projects for Deutsche Bank Germany. All teams I have been involved had between five and eight members working across multiple locations in an international environment using Scrum methodology. \n
+        In the first part of my career in the company I was involved in several projects. I was focusing on the front-end side, coding new React features and solving bugs. I was also supporting other members of the team, doing code reviews and suggesting new refactors to improve the quality of the code. \n
+        In the second part of my career in the company I was promoted to Analyst and while also doing coding tasks I also got new tasks like more project architectural decisions, documentation and doing technical interviews.
+      `
+    },
+    {
       title: 'Javascript Developer',
       company: 'ATSistemas',
       location: 'Barcelona, Spain',
       period: {
         start: 'October 2015',
-        end: 'July 2016'
+        end: 'July 2016',
+        time: '9 months'
       },
       description: `
-        Developed a back-end project controlling the lifecycle of mobile applications with Node.js, 
-        MySQL, Sequalize and Jenkins. \n
-        Involment in various front-end mobile applicaitons form banking to augmented reality using 
-        Cordova, HTML5, CSS3, Backbone, Angular, Dojo and plenty of javascript libraries.
+        In the first project I was involved the team was composed of three members; two senior javascript developers and me. The project was an in-house automatization tool for building hybrid mobile applications. We were using Kanban with source control and all the code I did was reviewed by one of the senior developers. My main task was to code some secondary features mainly in the back-end side. \n
+        My second project was in the insurance company Generali where I took over a mobile project where a new chat feature needed to be added. I reported directly to the client.
       `
     },
     {
       title: 'Freelance Full-Stack Developer',
-      company: 'Micronax A.S.',
+      company: 'Micronax',
       location: 'Trondheim, Norway',
       period: {
         start: 'June 2014',
-        end: 'December 2014'
+        end: 'December 2014',
+        time: '7 months'
       },
       description: `
-        Programmed the interface between the server and the client in a Phonegap game
-        using CoffeeScript, Node.js and other Full Stack technologies.
+        The project was a Norwegian version of the popular board game "Scrabble". The environment was a start-up with a team of eight members. Each member of the team reported directly to the product owner. I worked as a freelance developer three months on-site and three month remotely - located in Spain. \n
+        My main task there was to develop the login system for the game using OAUTH2 for platforms like Google and Facebook and also coding some screens in the front-end side.
       `
     },
     {
@@ -40,36 +55,11 @@ export default {
       location: 'Barcelona, Spain',
       period: {
         start: 'April 2011',
-        end: 'August 2013'
+        end: 'August 2013',
+        time: '2 years 4 months'
       },
       description: `
-        Managed and maintained a RedHat cluster and network of medium size. Compiling and optimizing
-        the linux kernel to improve the performance of some systems. Helping all network users.
-      `
-    },
-    {
-      title: 'Freelance C# Programmer',
-      company: 'Coralsis S.L.',
-      location: 'Sallent, Spain',
-      period: {
-        start: 'July 2009',
-        end: 'August 2009'
-      },
-      description: `
-        Developend an application to survey children in a classroom for the Kid's&Us English academy.
-      `
-    },
-    {
-      title: 'Junior C# Programmer',
-      company: 'Inditex S.A.',
-      location: 'Sallent, Spain',
-      period: {
-        start: 'April 2008',
-        end: 'July 2008'
-      },
-      description: `
-        Internship for the Higher Education Certificate. \n
-        Support senior developers with several C# applications.
+        Managed and maintained a RedHat cluster and network of medium size. Compiling and optimizing the linux kernel to improve the performance of some systems. Helping all network users.
       `
     }
   ],
@@ -87,18 +77,30 @@ export default {
     }
   ],
   skills: {
-    'System Administrator': [
-      { name: 'Unix systems', level: 4 },
-      { name: 'Bash', level: 3 },
-      { name: 'Docker', level: 2 },
-      { name: 'Networking', level: 3 },
-      { name: 'Virtualization', level: 3 }
+    'Technical skills': [
+      { name: 'HTML/CSS', level: 5 },
+      { name: 'Javascript/ES6', level: 5 },
+      { name: 'React', level: 5 },
+      { name: 'Redux', level: 5 },
+      { name: 'Jest', level: 5 },
+      { name: 'Webpack', level: 4 },
+      { name: 'Node', level: 4 },
+      { name: 'Express', level: 3 },
+      { name: 'LESS/SASS', level: 3 },
+      { name: 'Functional programming', level: 3 },
+      { name: 'Programming patterns', level: 3 },
+      { name: 'Backbone', level: 2 },
+      { name: 'Angular', level: 2 },
+      { name: 'Phonegap/Cordova', level: 2 }
     ],
-    'Full-Stack': [
-      { name: 'Javascript', level: 5 },
-      { name: 'Functional programming', level: 3 }
-    ],
-    'Soft Skills': ['Agile', 'Remote', 'Technical interviews']
+    'Soft skills': [
+      'Agile', 
+      'Remote workflow',
+      'Source control',
+      'Test Driven Development',
+      'Documentation',
+      'Technical interviews'
+    ]
   },
   languages: [
     { name: 'Catalan', level: 5 },

@@ -38,6 +38,10 @@ const DesktopLayout = styled.div`
     flex-direction: column;
     align-items: start;
   }
+
+  ${Column}:nth-child(3) {
+    max-width: 400px;
+  }
 `;
 
 export function MobileResume(data) {
@@ -83,10 +87,9 @@ export function DesktopResume(data) {
         </Column>
 
         <Column>{EmploymentHistory(data)}</Column>
-        <Column>{TechnicalSkills(data)}</Column>
-
         <Column>
           {Education(data)}
+          {TechnicalSkills(data)}
           {Languages(data)}
         </Column>
       </DesktopLayout>
