@@ -3,6 +3,7 @@ import styled from 'styled-components';
 
 import CircleList from './CircleList';
 import SkillList from './SkillList';
+import TagList from './TagList';
 import { Section, SubTitle } from './Elements';
 import { splitTextByParagraph } from '../utils/formatting';
 
@@ -42,7 +43,7 @@ export function PersonalDetails({ birthDate, address, telephone, email }) {
       <div>{birthDate}</div>
       <div>{address}</div>
       <div>{telephone}</div>
-      <div>{email}</div>
+      <a href={`mailto:${email}`}>{email}</a>
     </Section>
   );
 }
@@ -73,6 +74,7 @@ export function EmploymentHistory({ employmentHistory }) {
             <div>
               <i>{job.period.start} - {job.period.end} ({job.period.time})</i>
             </div>
+            <TagList tags={job.tags} />
             <div>{splitTextByParagraph(job.description)}</div>
           </JobItem>
         )}
