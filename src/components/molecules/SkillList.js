@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Circle } from './Elements';
+import Skill from './Skill';
 
 const FamilyContainer = styled.div`
   padding-bottom: 16px;
@@ -9,36 +9,6 @@ const FamilyContainer = styled.div`
     font-weight: bold;
   }
 `;
-
-const StyledCircle = styled(Circle)`
-  margin: 2px;
-`;
-const SkillContainer = styled.div`
-  min-width: 280px;
-  max-width: 750px;
-  display: flex;
-  justify-content: space-between;
-`;
-
-function Skill(props) {
-  const circles = [];
-  if (props.level) {
-    for (let i = 1; i <= 5; i++) {
-      if (i <= props.level) {
-        circles.push(<StyledCircle key={`Circle_${i}`} fill="true" />);
-      } else {
-        circles.push(<StyledCircle key={`Circle_${i}`} />);
-      }
-    }
-  }
-
-  return (
-    <SkillContainer>
-      <span>{props.name}</span>
-      <span>{circles}</span>
-    </SkillContainer>
-  );
-}
 
 export default function SkillList({ skills }) {
   // Detecting if we get no family

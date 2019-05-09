@@ -31,7 +31,7 @@ export default {
         end: 'July 2016',
         time: '9 months'
       },
-      tags: ['javascript', 'html', 'css', 'cordova', 'phonegap', 'node', 'happy', 'jenkins'],
+      tags: ['javascript', 'html', 'css', 'cordova', 'phonegap', 'node', 'hapi', 'jenkins'],
       description: `
         In the first project I was involved the team was composed of three members; two senior javascript developers and me. The project was an in-house automatization tool for building hybrid mobile applications. We were using Kanban with source control and all the code I did was reviewed by one of the senior developers. My main task was to code some secondary features mainly in the back-end side. \n
         My second project was in the insurance company Generali where I took over a mobile project where a new chat feature needed to be added. I reported directly to the client.
@@ -46,7 +46,7 @@ export default {
         end: 'December 2014',
         time: '7 months'
       },
-      tags: ['javascript', 'html', 'css', 'backbone', 'cordova'],
+      tags: ['coffeescript', 'html', 'css', 'backbone', 'cordova'],
       description: `
         The project was a Norwegian version of the popular board game "Scrabble". The environment was a start-up with a team of eight members. Each member of the team reported directly to the product owner. I worked as a freelance developer three months on-site and three month remotely - located in Spain. \n
         My main task there was to develop the login system for the game using OAUTH2 for platforms like Google and Facebook and also coding some screens in the front-end side.

@@ -7,7 +7,7 @@ export default createGlobalStyle`
     font-size: 16px;
     color: #333;
     min-width: 280px;
-    padding: 10px 15px 10px 10px;
+    padding: 10px 30px 10px 10px;
   }
 
   @media screen and (min-width: 750px) {
@@ -28,4 +28,15 @@ export default createGlobalStyle`
       display: block;
     }
   }
+
+  @media print { 
+    @page { margin: 0; } 
+    body { margin: 1.6cm; } 
+  }
 `;
+
+export const Colors = {
+  white: 'white',
+  black: 'black',
+  green: 'forestgreen'
+}

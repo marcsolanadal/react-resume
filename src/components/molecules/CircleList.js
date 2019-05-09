@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Circle } from './Elements';
+import { Circle } from '../atoms';
 
 const ListItem = styled.div`
   border-left: 2px solid green;

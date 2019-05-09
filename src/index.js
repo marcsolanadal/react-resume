@@ -2,14 +2,15 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 import GlobalStyle from './GlobalStyle';
-import LayoutSelector from './components/LayoutSelector';
 import data from './resumeData';
+
+import { ResumePage } from './components/pages/ResumePage';
 
 const Portfolio = () => {
   return (
     <>
       <GlobalStyle />
-      <LayoutSelector data={data} />
+      <ResumePage {...data} />
     </>
   )
 }
