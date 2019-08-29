@@ -6,7 +6,6 @@
   "main": "src/index.js",
   "homepage": "https://marcsolanadal.github.io/react-resume",
   "dependencies": {
-    "lodash": "4.17.11",
     "react": "16.5.2",
     "react-dom": "16.5.2",
     "react-scripts": "^2.1.2",
@@ -14,6 +13,7 @@
   },
   "devDependencies": {
     "gh-pages": "^2.0.1",
+    "lodash": "^4.17.15",
     "react-detect-print": "0.0.2"
   },
   "scripts": {
