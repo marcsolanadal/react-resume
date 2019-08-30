@@ -12,8 +12,8 @@ const Portfolio = () => {
       <GlobalStyle />
       <ResumePage {...data} />
     </>
-  )
-}
+  );
+};
 
 const rootElement = document.getElementById('root');
 ReactDOM.render(<Portfolio />, rootElement);

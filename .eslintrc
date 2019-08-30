@@ -5,12 +5,15 @@
     },
     "parser": "babel-eslint",
     "plugins": [
-      "react"
+      "react",
+      "prettier"
     ],
     "extends": [
-      "plugin:react/recommended"
+      "plugin:react/recommended",
+      "plugin:prettier/recommended"
     ],
     "rules": {
+      "prettier/prettier": "error",
       "curly": "error",
       "default-case": "error",
       "no-var": "error",
