@@ -2,7 +2,12 @@ import React from 'react';
 
 import { SubTitle, Section } from '../atoms';
 
-export default function PersonalDetails({ birthDate, address, telephone, email }) {
+export default function PersonalDetails({
+  birthDate,
+  address,
+  telephone,
+  email,
+}) {
   return (
     <Section>
       <SubTitle>PERSONAL DETAILS</SubTitle>

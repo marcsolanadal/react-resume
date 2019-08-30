@@ -7,7 +7,7 @@ import {
   Languages,
   PersonalDetails,
   TechnicalSkills,
-  Title
+  Title,
 } from '../organisms';
 
 export function ResumePage(props) {

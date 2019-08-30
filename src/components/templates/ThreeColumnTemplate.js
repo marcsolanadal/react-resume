@@ -84,7 +84,7 @@ function ThreeColumnTemplate({
   renderEmploymentHistory = emptyFunction,
   renderEducation = emptyFunction,
   renderTechnical = emptyFunction,
-  renderLanguage = emptyFunction
+  renderLanguage = emptyFunction,
 }) {
   return (
     <Layout>
@@ -113,7 +113,7 @@ ThreeColumnTemplate.propTyes = {
   renderEmploymentHistory: PropTypes.func,
   renderEducation: PropTypes.func,
   renderTechnical: PropTypes.func,
-  renderLanguage: PropTypes.func
+  renderLanguage: PropTypes.func,
 };
 
 export default ThreeColumnTemplate;

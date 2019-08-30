@@ -26,10 +26,14 @@ export default function EmploymentHistory({ employmentHistory }) {
           <JobItem>
             <div>{job.title}</div>
             <div>
-              <i>{job.company} - {job.location}</i>
+              <i>
+                {job.company} - {job.location}
+              </i>
             </div>
             <div>
-              <i>{job.period.start} - {job.period.end} ({job.period.time})</i>
+              <i>
+                {job.period.start} - {job.period.end} ({job.period.time})
+              </i>
             </div>
             <TagList tags={job.tags} />
             <div>{splitTextByParagraph(job.description)}</div>

@@ -38,5 +38,5 @@ export default createGlobalStyle`
 export const Colors = {
   white: 'white',
   black: 'black',
-  green: 'forestgreen'
-}
+  green: 'forestgreen',
+};

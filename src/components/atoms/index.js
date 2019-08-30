@@ -3,9 +3,4 @@ import Section from './Section';
 import SubTitle from './SubTitle';
 import Tag from './Tag';
 
-export {
-  Circle,
-  Section,
-  SubTitle,
-  Tag
-}
+export { Circle, Section, SubTitle, Tag };

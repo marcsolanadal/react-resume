@@ -11,5 +11,5 @@ export {
   Languages,
   PersonalDetails,
   TechnicalSkills,
-  Title
-}
+  Title,
+};
