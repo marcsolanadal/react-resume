@@ -5,6 +5,18 @@
   "keywords": [],
   "main": "src/index.js",
   "homepage": "https://marcsolanadal.github.io/react-resume",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "deploy": "gh-pages -d build"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
+  },
   "dependencies": {
     "react": "16.5.2",
     "react-dom": "16.5.2",
@@ -15,21 +27,10 @@
     "eslint": "^6.2.2",
     "eslint-plugin-prettier": "^3.1.0",
     "gh-pages": "^2.0.1",
+    "husky": "^3.0.4",
     "lodash": "^4.17.15",
     "prettier": "^1.18.2",
+    "pretty-quick": "^1.11.1",
     "react-detect-print": "0.0.2"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject",
-    "deploy": "gh-pages -d build"
-  },
-  "browserslist": [
-    ">0.2%",
-    "not dead",
-    "not ie <= 11",
-    "not op_mini all"
-  ]
+  }
 }
